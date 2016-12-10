@@ -42,17 +42,24 @@ i {font-size: 16px;}
 	position: relative;
 	font-size: 24px;
 	line-height: 42px;
-	/*padding: 0 52px;*/
 	width: 220px;
+}
+
+.btn-red {
+	display: block;
+	text-decoration: none;
+	background-color: #ee3643;
+	color: #fff;
+	text-transform: uppercase;
 	text-align: center;
 	vertical-align: middle;
 }
 
-.logo a:hover {
+.btn-red:hover {
 	background-color: #ca2c37;
 }
 
-.logo a:active {
+.btn-red:active {
 	background-color: #ba2732;
 }
 
@@ -72,10 +79,6 @@ i {font-size: 16px;}
 
 .logo a:active:after {
 	background-color: #8e1e26;
-}
-
-.btn-red {
-	background-color: #ee3643;
 }
 
 ::-webkit-input-placeholder {color:#fff; font-family: "Cuprum", "Arial", sans-serif; font-size: 17px;}
@@ -328,4 +331,194 @@ i {font-size: 16px;}
 .main-menu li:last-of-type a {
 	padding-right: 54px;
 	padding-left: 32px;
+}
+
+.content-items {
+	outline: 1px solid yellow;
+	font-size: 0;
+	margin-top: 59px;
+}
+
+.content-item {
+	display: inline-block;
+	vertical-align: top;
+	width: 300px;
+	height: 123px;
+	color: #fff;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding-top: 22px;
+}
+
+.content-item:nth-of-type(3n) {
+	margin-right: 0;
+	margin-bottom: 0;
+}
+
+.item-title {
+	font-size: 24px;
+	margin-top: 0px;
+	margin-left: 21px;
+	margin-bottom: 13px;
+	font-weight: bold;
+}
+
+.btn-items {
+	width: 135px;
+	font-size: 14px;
+	line-height: 40px;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	margin-left: 25px;
+	color: #fff;
+	background-color: rgba(0,0,0,0.1);
+	border-radius: 3px;
+}
+
+.btn-items:hover {
+	background-color: rgba(0,0,0,0.2);
+}
+.btn-items:active {
+	background-color: rgba(0,0,0,0.3);
+}
+
+.item-materials {
+	position: relative;
+	background-color: #f6b22d;
+	background-image: url("../img/materials.png");
+	background-repeat: no-repeat;
+	background-position: 214px 31px;
+}
+
+.item-tools {
+	background-color: #4aafde;
+	background-image: url("../img/tools.png");
+	background-repeat: no-repeat;
+	background-position: 194px 33px;
+}
+
+.item-machinery {
+	background-color: #cc79d1;
+	background-image: url("../img/machinery.png");
+	background-repeat: no-repeat;
+	background-position: 189px 31px;
+}
+
+.item-delivery {
+	background-color: #f6b22d;
+	background-image: url("../img/delivery.png");
+	background-repeat: no-repeat;
+	background-position: 189px 31px;
+}
+
+.item-discounts {
+	background-color: #85d179;
+	background-image: url("../img/discounts.png");
+	background-repeat: no-repeat;
+	background-position: 199px 27px;
+}
+
+.new::after {
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 59px;
+	background-image: url("../img/new.png");
+	top: 0;
+	right: 0;
+}
+
+.slider {
+	position: relative;
+	float: left;
+	width: 620px;
+	height: 266px;
+	margin-right: 0;
+	color: #fff;
+}
+
+.slider-title {
+	font-size: 36px;
+	font-weight: bold;
+	margin: 0;
+	text-transform: uppercase;
+	padding-top: 20px;
+	margin-left: 24px;
+}
+
+.slider-description {
+	font-size: 18px;
+	margin-left: 25px;
+	letter-spacing: 1px;
+}
+
+.slider-block {
+	width: 620px;
+	height: 266px;
+	display: none;
+}
+
+.slider-1 {
+	background-image: url("../img/slider-1.jpg");
+}
+
+.slider-2 {
+	background-image: url("../img/slider-2.jpg");
+}
+
+.btn-catalog {
+	display: block;
+	font-size: 14px;
+	width: 197px;
+	margin-left: 25px;
+	margin-bottom: 25px;
+	line-height: 38px;
+	border-radius: 3px;
+	margin-top: 122px;
+}
+
+.slider input[type="radio"] {
+	display: none;
+}
+
+.slider input[type="radio"]:checked + .slider-block {
+	display: block;
+}
+
+.slider-controls {
+	position: absolute;
+	font-size: 20px;
+	color: #fff;
+	bottom: 35px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.slider-controls label {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-right: 5px;
+	border-radius: 50%;
+	background-color: #fff;
+	border: 2px solid #fff;
+}
+
+#slider-1:checked ~ .slider-controls .label-1 {
+	background-color: #ee3643;
+}
+
+#slider-2:checked ~ .slider-controls .label-2 {
+	background-color: #ee3643;
+}
+
+.content-right {
+	float: right;
+}
+
+.content-right .content-item {
+	margin-right: 0;
+	display: block;
 }
