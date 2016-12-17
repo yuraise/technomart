@@ -1120,5 +1120,149 @@ i {font-size: 16px;}
 	color: #ee3643;
 }
 
+/*					catalog.html					*/
 
+.cart-nonempty {
+	background-color: #ee3643;
+}
 
+.cart-nonempty a:hover {
+	background-color: #ca2c37;
+}
+
+.cart-nonempty a:active {
+	background-color: #ba2732;
+}
+
+.user .user-name {
+	position: relative;
+	float: left;
+	padding-left: 45px;
+	padding-right: 35px;
+}
+
+.user-name::before {
+	content: "\e805";
+	font-family: icons;
+	color: #c5c5c5;
+	position: absolute;
+	left: 15px;
+}
+
+.user .logout {
+	position: relative;
+	float: right;
+	font-size: 0px;
+	padding: 0;
+	padding-right: 30px;
+}
+
+.logout::before {
+	content: "";
+	position: absolute;
+	width: 21px;
+	height: 17px;
+	background-image: url(../img/icon-logout.png);
+	top:50%;
+	transform: translateY(-50%);
+}
+
+.logout:hover:before {
+	background-image: url(../img/icon-logout-hover.png);
+}
+
+.logout:active:before {
+	background-image: url(../img/icon-logout.png);
+}
+
+.user .user-name:hover {
+	color: #000;
+}
+
+.user .user-name:active {
+	color: #c5c5c5;
+}
+
+.user-name:hover:before {
+	color: #32425c;
+}
+
+.user-name:active:before {
+	color: #c5c5c5;
+}
+
+.user-options {
+	margin-top: 10px;
+}
+
+.user-options a {
+	background-color: #f2f6f8;
+	color: #49586f;
+	float: left;
+	padding: 0 15px;
+	font-size: 16px;
+	line-height: 16px;
+	text-decoration: underline;
+}
+
+.user-block a:active {
+	color: #c5c5c5;
+}
+
+.breadcrumbs {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-size: 0;
+}
+
+.breadcrumbs li {
+	display: inline-block;
+}
+
+.breadcrumbs a {
+	position: relative;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	line-height: 56px;
+	padding: 0 19px;
+	color: #000;
+	font-family: "PT Sans", sans-serif;
+}
+
+.breadcrumbs a::after {
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 12px;
+	background-image: url(../img/icon-right-small.png);
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.breadcrumbs .last::after {
+	display: none;
+}
+
+.breadcrumbs .home::after {
+	top: 24px;
+}
+
+.breadcrumbs .home {
+	font-size: 0px;
+	background: url(../img/icon-home.png) no-repeat 0 18px;
+}
+
+.page-title {
+	font-size: 30px;
+	line-height: 30px;
+	padding: 27px 28px;
+	background-color: #f2f6f8;
+	margin: 0;
+	color: #32425c;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
