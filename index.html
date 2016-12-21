@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="icons/css/icons.css">
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet"> 
@@ -107,7 +108,7 @@
 					<a href="#" class="btn-red btn-popular">Все популярные товары</a>
 				</header>
 				<div class="goods-container">
-					<div class="goods-item">
+					<div class="goods-item bfg-9000">
 						<div class="btns-container">
 							<a href="#" class="btn btn-buy">Купить</a>
 							<a href="#" class="btn btn-bookmark">В закладки</a>
@@ -117,7 +118,7 @@
 						<div class="price-old">32500 Р.</div>
 						<a href="#" class="btn-red price-new">25500 Р.</a>
 					</div>
-					<div class="goods-item">
+					<div class="goods-item bfg-3000">
 						<div class="btns-container">
 							<a href="#" class="btn btn-buy">Купить</a>
 							<a href="#" class="btn btn-bookmark">В закладки</a>
@@ -127,7 +128,7 @@
 						<div class="price-old">22500 Р.</div>
 						<a href="#" class="btn-red price-new">15500 Р.</a>
 					</div>
-					<div class="goods-item">
+					<div class="goods-item bfg-6000">
 						<div class="btns-container">
 							<a href="#" class="btn btn-buy">Купить</a>
 							<a href="#" class="btn btn-bookmark">В закладки</a>
@@ -137,7 +138,7 @@
 						<div class="price-old">30500 Р.</div>
 						<a href="#" class="btn-red price-new">25500 Р.</a>
 					</div>
-					<div class="goods-item new">
+					<div class="goods-item bfg-2000 new">
 						<div class="btns-container">
 							<a href="#" class="btn btn-buy">Купить</a>
 							<a href="#" class="btn btn-bookmark">В закладки</a>
@@ -215,6 +216,30 @@
 					<div class="map"><img src="img/map.png" alt="Technomart on map" width="300" height="158"></div>
 					<a href="" class="btn-red btn-write-us">Заблудились? Напишите нам!</a>
 				</div>
+			</div>
+		</div>
+		<div class="popup write-us">
+			<button class="btn-close"></button>
+			<div class="popup-form">
+				<form action="http://echo.htmlacademy.ru" method="post">
+					<div class="form-block clearfix">
+						<div class="name">
+							<label for="name">Ваше имя:</label>
+							<input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+						</div>
+						<div class="email">
+							<label for="email">Ваш e-mail:</label>
+							<input type="text" name="email" id="email" placeholder="Для отправки ответа">
+						</div>
+					</div>
+					<div class="form-block">
+						<label for="text">Текст письма:</label>
+						<textarea name="text" id="text" placeholder="В свободной форме" cols="30" rows="5"></textarea>
+					</div>
+				</form>
+			</div>
+			<div class="links-container clearfix">
+				<a href="#" class="btn btn-red btn-send">Отправить</a>
 			</div>
 		</div>
 	</main>
