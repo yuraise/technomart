@@ -1163,9 +1163,9 @@ i {font-size: 16px;}
 	width: 20px;
 	height: 18px;
 	background-image: url(../img/sprite.png);
- 	background-position: -135px -63px;
- 	width: 20px;
- 	height: 18px;
+	background-position: -135px -63px;
+	width: 20px;
+	height: 18px;
 }
 
 .user .logout {
@@ -1714,6 +1714,7 @@ i {font-size: 16px;}
 	outline: none;
 	background-image: url(../img/sprite.png);
 	background-position: -156px -102px;
+	cursor: pointer;
 }
 
 .top-message {
@@ -1774,6 +1775,7 @@ i {font-size: 16px;}
 .write-us {
 	display: none;
 	height: 430px;
+	z-index: 30;
 }
 
 .btn-send {
@@ -1825,3 +1827,23 @@ i {font-size: 16px;}
 .popup-form ::-moz-placeholder          {color:#999; font-family: "PT Sans", "Arial", sans-serif; font-size: 13px;}
 .popup-form :-moz-placeholder           {color:#999; font-family: "PT Sans", "Arial", sans-serif; font-size: 13px;}
 .popup-form :-ms-input-placeholder      {color:#999; font-family: "PT Sans", "Arial", sans-serif; font-size: 13px;}
+
+.show {
+	display: block;
+}
+
+@keyframes shake {
+  0%, 100% {
+	transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+	transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+	transform: translateX(10px);
+  }
+}
+
+.form-error {
+	animation: shake 1s;
+}
